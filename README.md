@@ -1,2 +1,2 @@
-# FileHasher-SHA256
+# VT Hash Checker
 The following Python script takes a file as input, calculates its SHA256 hash value, and then queries the VirusTotal API using the hash value to obtain the last analysis data. The script can be used as a preventive measure to avoid uploading large files to an online service for analysis. Instead of uploading the entire file, only the hash value is used to query the VirusTotal database and obtain relevant information. This can help to save time and bandwidth while still obtaining important insights about the file's security status. A VirusTotal API key is required to run this script.
