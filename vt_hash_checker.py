@@ -28,7 +28,7 @@ def virustotal(hash, api_key):
         print(response.json(), end="\n\n")
 
 while True:
-    path = input("Drop file or insert link (Warning HASH will be uploaded to Virustotal): \n")
+    path = input("Drop file or insert path (Warning HASH will be uploaded to Virustotal): \n")
     
     if path[0] == "'" or path[0] == '"':
         path = path[1:len(path)-1] # Remove quotes
@@ -41,4 +41,4 @@ while True:
             virustotal(hash, api_key)
                         
     except:
-        print("Error with file or link...\n")
+        print("Error with file or path...\n")
